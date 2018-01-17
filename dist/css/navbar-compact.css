@@ -166,6 +166,7 @@
 .nbc-menu-wrap {
     display: none;
     width: 100%;
+    min-width: 200px;
     overflow-y: auto;
     position: absolute;
     top: 100%;
