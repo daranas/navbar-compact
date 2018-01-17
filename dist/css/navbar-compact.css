@@ -1,0 +1,345 @@
+.nav-bar-compact {
+    min-height: 40px;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+    -webkit-transition: all 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940);
+    -moz-transition: all 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940);
+    -o-transition: all 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940);
+    transition: all 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940);
+    z-index: 201;
+}
+
+.nbc-bg,
+.js-nbc-bg {
+    background: rgba(18, 18, 18, .93);
+}
+
+.nbc-logo-wrap {
+    float: left;
+    min-width: 120px;
+    max-width: 250px;
+    height: 65px;
+    padding: 0 20px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.nbc-logo {
+    display: block;
+    width: 100%;
+    height: auto;
+    position: relative;
+    left: 0;
+    top: 50%;
+    float: left;
+    text-align: left;
+    font-size: 18px;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgba(255, 255, 255, .9);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    -webkit-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    -moz-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    -o-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    -ms-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+}
+
+.nbc-logo img {
+    max-height: 100%;
+}
+
+.nbc-logo:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+.nbc-menu-button {
+    width: 68px;
+    height: 65px;
+    position: relative;
+    float: left;
+    border-left: 1px solid rgba(255, 255, 255, .1);
+}
+
+.nbc-bg .nbc-menu-button,
+.js-nbc-bg .nbc-menu-button {
+    /*border-left: 1px solid rgba(255,255,255, .08);*/
+}
+
+.nbc-menu-icon {
+    display: block;
+    width: 27px;
+    height: 3px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -2px 0 0 -14px;
+    background: rgba(255, 255, 255, .9);
+    -webkit-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    -moz-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    -o-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    -ms-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+}
+
+.nbc-menu-button:active .nbc-menu-icon {
+    -webkit-transform: translateX(1px) translateY(1px);
+    -moz-transform: translateX(1px) translateY(1px);
+    transform: translateX(1px) translateY(1px);
+}
+
+.nbc-bg .nbc-menu-icon,
+.js-nbc-bg .nbc-menu-icon {
+    opacity: 1;
+}
+
+.nbc-menu-icon:before {
+    content: " ";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -7px;
+    left: 0;
+    background: rgba(255, 255, 255, .9);
+    -webkit-transition: background 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    -moz-transition: background 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    -o-transition: background 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    -ms-transition: background 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    transition: background 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+}
+
+.nbc-menu-icon:after {
+    content: " ";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 7px;
+    left: 0;
+    background: rgba(255, 255, 255, .9);
+    -webkit-transition: background 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    -moz-transition: background 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    -o-transition: background 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    -ms-transition: background 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    transition: background 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+}
+
+.nav-bar-compact:hover,
+.nav-bar-compact.js-opened,
+.nbc-bg:hover,
+.js-nbc-bg:hover {
+    background: rgba(18, 18, 18, .93);
+}
+
+.nav-bar-compact:hover .nbc-menu-icon,
+.nav-bar-compact.js-opened .nbc-menu-icon {
+    background: rgba(255, 255, 255, .3);
+}
+
+.nav-bar-compact.js-opened .nbc-menu-icon {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.nav-bar-compact:hover .nbc-menu-icon:before,
+.nav-bar-compact.js-opened .nbc-menu-icon:before {
+    background: rgba(255, 255, 255, .3);
+}
+
+.nav-bar-compact:hover .nbc-menu-icon:after,
+.nav-bar-compact.js-opened .nbc-menu-icon:after {
+    background: rgba(255, 255, 255, .3);
+}
+
+.nbc-menu-wrap {
+    display: none;
+    width: 100%;
+    overflow-y: auto;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: rgba(18, 18, 18, .93);
+    border-top: 1px solid rgba(255, 255, 255, .1);
+    opacity: 0;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.19s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    -moz-transition: all 0.19s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    -o-transition: all 0.19s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    -ms-transition: all 0.19s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    transition: all 0.19s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    -webkit-transform: perspective(200px) rotateX(15deg) scale(0.75);
+    -moz-transform: perspective(200px) rotateX(15deg) scale(0.75);
+    -o-transform: perspective(200px) rotateX(15deg) scale(0.75);
+    -ms-transform: perspective(200px) rotateX(15deg) scale(0.75);
+    transform: perspective(200px) rotateX(15deg) scale(0.75);
+}
+
+.nav-bar-compact.js-opened .nbc-menu-wrap {
+    -webkit-transform: perspective(200px) rotateX(0deg) scale(1);
+    -moz-transform: perspective(200px) rotateX(0deg) scale(1);
+    -o-transform: perspective(200px) rotateX(0deg) scale(1);
+    -ms-transform: perspective(200px) rotateX(0deg) scale(1);
+    transform: perspective(200px) rotateX(0deg) scale(1);
+    opacity: 1;
+}
+
+.nbc-menu-links,
+.nbc-menu-links ul {
+    margin: 0;
+    padding: 10px 0;
+    line-height: 1;
+}
+
+.nbc-menu-links ul.nbc-sub {
+    padding: 0;
+}
+
+.nbc-menu-links a {
+    display: block;
+    position: relative;
+    margin: 0;
+    padding: 9px 20px;
+    color: #999;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, .1);
+    -webkit-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    -moz-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    -o-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    -ms-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    z-index: 11;
+}
+
+.nbc-menu-links a:hover,
+.nbc-menu-links a:active,
+.nbc-menu-links li.js-opened > a {
+    color: #d5d5d5;
+    text-decoration: none;
+}
+
+.nbc-menu-links li {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.nbc-menu-links li > a:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, .1);
+    -webkit-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    -moz-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    -o-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    -ms-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    z-index: 10;
+}
+
+.nbc-menu-links li > a:hover:before {
+    width: 100%;
+}
+
+.nbc-menu-links li > a:active,
+.nbc-menu-links li a.active {
+    color: #f5f5f5;
+}
+
+.nbc-menu-links li.js-opened:before {
+    display: none;
+}
+
+.nbc-menu-links li.js-opened > a:hover,
+.nbc-menu-links li.js-opened > a:active {
+    color: #fff;
+}
+
+.nbc-has-sub {}
+
+.nbc-has-sub .fa {
+    width: 17px;
+    height: 17px;
+    font-size: 14px;
+    line-height: 16px;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    margin-top: -7px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, .1);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.js-opened > .nbc-has-sub > .fa {
+    border-color: rgba(255, 255, 255, .4);
+    line-height: 14px;
+}
+
+.nbc-sub {
+    display: none;
+    opacity: 0;
+    position: relative;
+    z-index: 10;
+}
+
+.nbc-sub > li > a {
+    padding-left: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.nbc-menu-links li.js-opened .nbc-sub {
+    opacity: 1;
+}
+
+/* Social links */
+.nbc-social-links {
+    padding: 5px 20px 10px;
+    font-size: 14px;
+}
+
+.nbc-social-links > a {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: left;
+    text-decoration: none;
+    color: #404040;
+}
+
+.nbc-social-links > a:hover {
+    color: #999;
+    -webkit-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    -moz-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    -o-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    -ms-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+}
