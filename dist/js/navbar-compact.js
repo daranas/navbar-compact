@@ -48,7 +48,7 @@
             }
         });
 
-        // Sub menu
+        // sub menu
         var nbcHasSub = $(".nbc-has-sub");
         var nbcThisLi;
 
